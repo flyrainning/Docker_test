@@ -57,7 +57,8 @@ server {
 	#	# With php7.0-cgi alone:
 	#	fastcgi_pass php7:9000;
 	#	# With php7.0-fpm:
-		fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+		#fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+		fastcgi_pass localhost:9000;
 	}
 
 	# deny access to .htaccess files, if Apache's document root
